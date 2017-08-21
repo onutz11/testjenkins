@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('buil') {
+    stage('build') {
       steps {
         svn(url: 'http://192.168.33.11/svn/testrepo/', poll: true, changelog: true)
       }
     }
-    stage('') {
+    stage('test') {
       steps {
         parallel(
           "t1": {
@@ -38,7 +38,6 @@ pipeline {
           },
           "long qa": {
             sleep 10
-            build 'a job in pipeline'
             
           }
         )
