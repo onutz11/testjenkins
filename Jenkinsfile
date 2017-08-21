@@ -14,11 +14,6 @@ pipeline {
             
           },
           "t2": {
-            node(label: 'node1') {
-              sh 'ls'
-              sh 'date'
-            }
-            
             sh 'date'
             
           }
