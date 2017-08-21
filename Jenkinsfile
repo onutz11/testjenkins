@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        svn(url: 'http://192.168.33.11/svn/testrepo/', poll: true, changelog: true)
+        echo 'start'
       }
     }
     stage('test') {
