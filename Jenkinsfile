@@ -41,7 +41,7 @@ pipeline {
     }
     stage('fail') {
       steps {
-        sh 'sdsdasdadad'
+        sh 'date'
       }
     }
     stage('deploy') {
