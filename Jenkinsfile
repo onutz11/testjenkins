@@ -29,6 +29,7 @@ pipeline {
           },
           "qa2": {
             echo 'qa2 log'
+            input(message: 'Ready to go?', submitterParameter: 'Proceed, Abort')
             
           },
           "long qa": {
