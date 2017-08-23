@@ -11,6 +11,7 @@ pipeline {
         parallel(
           "t1": {
             sh 'lsb_release -a'
+            svn(url: 'http://192.168.33.11/svn/testrepo/', changelog: true, poll: true)
             
           },
           "t2": {
