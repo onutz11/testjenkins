@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'start'
+        echo 'DUDU'
       }
     }
     stage('test') {
@@ -49,5 +50,9 @@ pipeline {
         echo 'stop'
       }
     }
+  }
+  environment {
+    DUDU = '23_DUDU'
+    LOLO = '23_LOLO'
   }
 }
